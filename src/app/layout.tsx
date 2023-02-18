@@ -1,4 +1,6 @@
+import Footer from './Footer';
 import './globals.css';
+import Navbar from './Navbar';
 
 export default function RootLayout({
   children,
@@ -8,7 +10,11 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <head />
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        <div className='min-h-[85vh]'>{children}</div>
+        <Footer />
+      </body>
     </html>
   );
 }
