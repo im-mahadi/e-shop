@@ -5,6 +5,7 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
     "./node_modules/flowbite/**/*.js",
+    'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}',
 
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -12,5 +13,10 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require('prettier-plugin-tailwindcss'), require('@tailwindcss/typography'), require('flowbite/plugin')],
+  plugins: [
+    require('prettier-plugin-tailwindcss'),
+    require('@tailwindcss/typography'),
+    require('flowbite/plugin'),
+    require('flowbite/plugin')
+  ],
 }
